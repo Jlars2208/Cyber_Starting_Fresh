@@ -1,22 +1,35 @@
-name: Remove triage label
-on:
-  issues:
-    types:
-      - labeled
 
-permissions:
-  issues: write
+"""
+A set of Python functions that have mixed input and output expectations
 
-jobs:
-  remove-triage-label-from-issues:
-    if:
-      github.event.label.name != 'triage' && github.event.label.name !=
-      'more-info-needed'
-    runs-on: ubuntu-latest
-    steps:
-      - run: gh issue edit "$NUMBER" --remove-label "$LABELS"
-        env:
-          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          GH_REPO: ${{ github.repository }}
-          NUMBER: ${{ github.event.issue.number }}
-          LABELS: triage
+"""
+
+# Lowercases an input string
+def toLower(s):
+    if type(s) is not str:
+        raise ValueError("Wrong input type: the parameter must be a string");
+    return s.lower()
+
+# Uppercases an input string
+def toUpper(s):
+    if type(s) is not str:
+        raise ValueError("Wrong input type: the parameter must be a string");
+    return s.upper()
+
+# Combines 2 strings
+def concat(a,b):
+    if type(a) is not str or type(b) is not str:
+        raise ValueError("Wrong input type: the parameters must be strings");
+    return a + b
+
+# Returns the starting location of b in a
+def strFind(a, b):
+    retval = -1
+    
+    if type(a) is not str or type(b) is not str:
+        raise ValueError("Wrong input type: the parameters must be strings");
+    
+    if b in a:
+        retval = a.find(b)
+        
+    return retval
