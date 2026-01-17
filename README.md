@@ -99,18 +99,18 @@ Thanks for visiting — let's build something great! ✨
 --------------------------------------------------------------
 
 
-🛡️ Network Guardian SIEM
+                  🛡️ Network Guardian SIEM
 
 Network Guardian is a custom-built Security Information and Event Management (SIEM) tool. It provides real-time visibility into network traffic, performs deep packet inspection (DPI) for sensitive keywords, and visualizes data through an interactive web dashboard.
 
-📋 Table of Contents
+                    📋 Table of Contents
 Features
 Architecture
 Installation
 Usage
 Security & Compliance
 
-✨ Features
+                       ✨ Features
 Live Traffic Analysis: Real-time monitoring of TCP/UDP packets using Scapy.
 Geographical Tracking: Integration with IPinfo to identify the physical location and Organization (ISP) of source IPs.
 Deep Packet Inspection: Scans raw payloads for unencrypted sensitive keywords (e.g., "password", "admin").
@@ -118,33 +118,33 @@ Desktop Alerts: Cross-platform system notifications for high-risk traffic.
 Interactive Dashboard: Built with Streamlit to show traffic "heartbeats," service distribution, and alert logs.
 Audit Reporting: One-click CSV export for security forensics and compliance.
 
-🏗️ Architecture
+                     🏗️ Architecture
 The tool uses a multi-threaded approach to ensure no packets are dropped during UI rendering:
 The Engine (Scapy): Sniffs raw traffic and extracts metadata.
 The Logic (Python/Pandas): Filters duplicates and matches keywords.
 The UI (Streamlit): Consumes the processed data for live visualization.
 
-🚀 Installation
+                     🚀 Installation
 1. Prerequisites
 Ensure you have Python 3.8+ installed. You will also need libpcap installed on your system (standard on Linux/Mac; use Npcap for Windows).
 2. Install Dependencies
 
 pip install streamlit scapy plyer ipinfo pandas
 
-💻 Usage
+                        💻 Usage
 Obtain an API Token: Sign up for a free token at ipinfo.io.
 Configure the Script: Replace your_ipinfo_token_here in the script with your actual token.
 Run as Administrator: Since network sniffing requires raw socket access, you must run the tool with elevated privileges.
 <!-- end list -->
 
-# Linux / macOS
+                      # Linux / macOS
 sudo streamlit run guardian.py
 
-# Windows
-# Run your terminal as Administrator, then:
+                         # Windows
 streamlit run guardian.py
+         # Run your terminal as Administrator, then:
 
-🔒 Security & Compliance
+                🔒 Security & Compliance
 Privacy: This tool does not store packet data permanently unless the "Export" button is clicked. All data is stored in a rolling RAM buffer.
 Resource Impact: Utilizes Berkeley Packet Filters (BPF) to minimize CPU overhead.
 Encryption: The tool respects TLS/SSL boundaries and does not attempt to decrypt secure payloads, ensuring privacy for encrypted communications.
