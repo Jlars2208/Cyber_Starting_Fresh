@@ -16,7 +16,7 @@ A quick, professional intro: I'm a [CyberSecurity/Contruction worker tech y] who
 
 ---
 
-                       ## 🚀 About Me
+## 🚀 About Me
 - 🔭 Current focus: {{going back to school for higher learning, and finding a Tech carrer. Been getting more into coding}}
 - 🌱 Learning: {{LEARNING_GOAL}} (learning more about pen testing and furthering my knowledge to become a sscp, cism, and maybe CEH)
 - 👯 Open to: Collaborations on {{COLLABORATION_AREAS}} (open-source tooling, DevOps automations, tips and pointers)
@@ -26,7 +26,7 @@ A quick, professional intro: I'm a [CyberSecurity/Contruction worker tech y] who
 
 ---
 
-                      ## 💡 Key Skills
+## 💡 Key Skills
 - Languages: {{LANGUAGES}} (e.g., JavaScript, TypeScript, Python, Go)
 - Frameworks & Tools: {{FRAMEWORKS}} (e.g., React, Node.js, Docker, Kubernetes)
 - Testing & CI: {{TESTING_CI}} (e.g., Jest, Playwright, GitHub Actions)
@@ -34,7 +34,7 @@ A quick, professional intro: I'm a [CyberSecurity/Contruction worker tech y] who
 
 ---
 
-                      ## 🔧 Tech Stack
+## 🔧 Tech Stack
 ```
 Primary:     {{PRIMARY_STACK}} 
 Databases:   {{DATABASES}}
@@ -44,7 +44,7 @@ Infrastructure: {{INFRASTRUCTURE}}
 
 ---
 
-                  ## 📂 Selected Projects
+## 📂 Selected Projects
 ### [Project One name](PROJECT_ONE_URL) — short tagline
 A 1–2 sentence description highlighting impact, tech used, and results (e.g., reduced latency by 40%, served 100k users).
 
@@ -58,28 +58,28 @@ Describe the project and include any measurable outcomes (performance, adoption,
 
 ---
 
-                 ## 📈 GitHub Stats (optional)
+## 📈 GitHub Stats (optional)
 [![Jlars2208's GitHub stats](https://github-readme-stats.vercel.app/api?username=Jlars2208&show_icons=true&theme=github_dark)](https://github.com/Jlars2208)
 
 (If you'd like these, I can add or customize them—colors, hide total stars, show streaks, etc.)
 
 ---
 
-               ## 🎯 Highlights & Achievements
+## 🎯 Highlights & Achievements
 - {{ACHIEVEMENT_1}} (e.g., Speaker at XYZ conference, published article)
 - {{ACHIEVEMENT_2}} (e.g., Contributor to popular OSS package)
 - {{CERTIFICATIONS}} (e.g., AWS Certified Solutions Architect)
 
 ---
 
-                 ## 🤝 How to Work With Me
+## 🤝 How to Work With Me
 - Preferred communication: {{COMM_PREF}} (e.g., Email, LinkedIn, Slack)
 - Best times: {{AVAILABILITY_HOURS}} (optional)
 - Hiring: {{HIRING_STATUS}} (e.g., Open to opportunities / Not looking)
 
 ---
 
-                 ## 📫 Contact & Socials
+## 📫 Contact & Socials
 - Website/Portfolio: [{{WEBSITE}}]({{WEBSITE}})
 - Email: {{EMAIL}}
 - LinkedIn: [{{LINKEDIN_USERNAME}}]({{LINKEDIN_URL}})
@@ -99,11 +99,11 @@ Thanks for visiting — let's build something great! ✨
 --------------------------------------------------------------
 
 
-                 ## 🛡️ Network Guardian SIEM
+## 🛡️ Network Guardian SIEM
 
 Network Guardian is a custom-built Security Information and Event Management (SIEM) tool. It provides real-time visibility into network traffic, performs deep packet inspection (DPI) for sensitive keywords, and visualizes data through an interactive web dashboard.
 
-                  ## 📋 Table of Contents
+## 📋 Table of Contents
 
 -Features
 -Architecture
@@ -111,7 +111,7 @@ Network Guardian is a custom-built Security Information and Event Management (SI
 -Usage
 -Security & Compliance
 
-                      ## ✨ Features
+## ✨ Features
 
 Live Traffic Analysis: Real-time monitoring of TCP/UDP packets using Scapy.
 Geographical Tracking: Integration with IPinfo to identify the physical location and Organization (ISP) of source IPs.
@@ -120,14 +120,14 @@ Desktop Alerts: Cross-platform system notifications for high-risk traffic.
 Interactive Dashboard: Built with Streamlit to show traffic "heartbeats," service distribution, and alert logs.
 Audit Reporting: One-click CSV export for security forensics and compliance.
 
-                    ## 🏗️ Architecture
+## 🏗️ Architecture
 
 The tool uses a multi-threaded approach to ensure no packets are dropped during UI rendering:
 The Engine (Scapy): Sniffs raw traffic and extracts metadata.
 The Logic (Python/Pandas): Filters duplicates and matches keywords.
 The UI (Streamlit): Consumes the processed data for live visualization.
 
-                    ## 🚀 Installation
+## 🚀 Installation
 
 1. Prerequisites
 Ensure you have Python 3.8+ installed. You will also need libpcap installed on your system (standard on Linux/Mac; use Npcap for Windows).
@@ -135,25 +135,26 @@ Ensure you have Python 3.8+ installed. You will also need libpcap installed on y
 
 pip install streamlit scapy plyer ipinfo pandas
 
-                       ## 💻 Usage
+## 💻 Usage
 
 Obtain an API Token: Sign up for a free token at ipinfo.io.
 Configure the Script: Replace your_ipinfo_token_here in the script with your actual token.
 Run as Administrator: Since network sniffing requires raw socket access, you must run the tool with elevated privileges.
 <!-- end list -->
 
-                      # Linux / macOS
+# Linux / macOS
 
 sudo streamlit run guardian.py
 
-                         # Windows
+
+# Windows
 
 streamlit run guardian.py
 
          # Run your terminal as Administrator
 
 
-               ## 🔒 Security & Compliance
+## 🔒 Security & Compliance
 
 NOW PRIVACY: This tool does not store packet data permanently unless the "Export" button is clicked. All data is stored in a rolling RAM buffer.
 Resource Impact: Utilizes Berkeley Packet Filters (BPF) to minimize CPU overhead.
