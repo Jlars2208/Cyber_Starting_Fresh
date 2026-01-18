@@ -146,12 +146,12 @@ Run as Administrator: Since network sniffing requires raw socket access, you mus
 
 sudo streamlit run guardian.py
 
-
 # Windows
 
 streamlit run guardian.py
 
-         # Run your terminal as Administrator
+
+# Run your terminal as Administrator
 
 
 ## 🔒 Security & Compliance
